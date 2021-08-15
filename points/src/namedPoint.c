@@ -1,3 +1,12 @@
+/*
+ * Declare structs and functions of namedPoint header file
+ *
+ * namedPoint.c
+ *
+ * Author:     Murilo Chianfa <github.com/MuriloChianfa>
+ * release:    1.0.0
+ */
+
 #include "namedPoint.h"
 
 #include<stdlib.h>
