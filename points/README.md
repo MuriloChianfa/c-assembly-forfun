@@ -1,26 +1,28 @@
 # Examples of Points implementation
 
-> Compile
+### Compile
 
 ```shell
 $ make
 ```
 
-> Clear
+### Clear
 
 ```shell
 $ make clean
 ```
 
-> Clear and remove binaries
+### Clear and remove binaries
 
 ```shell
 $ make remove
 ```
 
-#### Usage after compile
+### Usage after compile
 
 ```shell
 $ ./example
 ```
+
+![Alt text](example.jpg)
 
