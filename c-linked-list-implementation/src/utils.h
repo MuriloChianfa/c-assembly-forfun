@@ -1,3 +1,12 @@
+/*
+ * Utils functions header definitions
+ *
+ * utils.h
+ *
+ * Author:     Murilo Chianfa
+ * Build date: 2021-09-02 19:30
+ */
+
 #ifndef UTILS_H
 #define UTILS_H
 

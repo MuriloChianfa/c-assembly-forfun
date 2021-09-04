@@ -1,3 +1,12 @@
+/*
+ * Product header definitions
+ *
+ * product.h
+ *
+ * Author:     Murilo Chianfa
+ * Build date: 2021-09-02 19:30
+ */
+
 #ifndef PRODUCT_H
 #define PRODUCT_H
 

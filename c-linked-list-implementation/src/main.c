@@ -16,6 +16,13 @@
 #include <stdint.h>
 #include <signal.h>
 
+/*
+ * Function: print_main_menu
+ * ----------------
+ *   Simple print the main menu options
+ *
+ *   returns: void
+ */
 void print_main_menu()
 {
     puts("+-------------------------+");
@@ -33,6 +40,15 @@ void print_main_menu()
     puts("+-------------------------+");
 }
 
+/*
+ * Function: dispatch_option
+ * ----------------
+ *   Dispatch the option received to one program function
+ *
+ *   option: a pointer to int number
+ *
+ *   returns: void
+ */
 void dispatch_option(int *option)
 {
     switch (*option)
@@ -40,9 +56,9 @@ void dispatch_option(int *option)
         case 1: user_insert_product(); break;
         case 2: user_delete_product(); break;
         case 3: show_product_list(); break;
-        case 4: puts("4"); break;
-        case 5: puts("5"); break;
-        case 6: puts("6"); break;
+        case 4: count_product_list(); break;
+        case 5: search_by_product_code(); break;
+        case 6: show_odd_products(); break;
         default: puts("Unrecognized option!"); break;
     }
 
@@ -52,6 +68,16 @@ void dispatch_option(int *option)
     fgetc(stdin);
 }
 
+/*
+ * Function: main
+ * ----------------
+ *   Main function is a entry point to this program
+ *
+ *   argc: int number containing the size of command line args
+ *   argv: string vector containing the command line args
+ *
+ *   returns: int
+ */
 int main(int argc, char *argv[])
 {
     signal(SIGINT, system_exit);
